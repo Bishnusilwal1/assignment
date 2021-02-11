@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>forms</title>
+</head>
+<body>
+<form method="get">
+<table>
+<tr>
+<td><label>Name: </label></td>
+<td><input type="text" name="name" placeholder="Enter Name" required /></td>
+</tr> 
+<tr>
+<td><label>DoB: </label></td>
+<td><input type="date" name="dob" value="2020-12-03" /></td>
+</tr>
+<tr>
+<td><label>Gender: </label></td>
+<td>
+<input type="radio" name="gender" value="Male" id='Male' checked />
+<label for='Male'>Male</label>
+<input type="radio" name="gender" value="Female" />
+<label>Female</label>
+<input type="radio" name="gender" value="Other" />
+<label>Other</label>
+</td>
+</tr>
+<tr>
+<td><label>Username: </label></td>
+<td><input type="text" name="username" autocomplete="off" /></td>
+</tr>
+<tr>
+<td><label>Password: </label></td>
+<td><input type="password" name="password" /></td>
+</tr>
+<tr>
+<td><label>Mobile: </label></td>
+<td><input type="number" name="mobile" max="9000000000" /></td>
+</tr>
+<tr>
+<td><label>Email: </label></td>
+<td><input type="email" name="email" /></td>
+</tr>
+<tr>
+<td><label>Website: </label></td>
+<td><input type="url" name="website" /></td>
+</tr>
+<tr>
+<td><label>Hobbies: </label></td>
+<td>
+<input type="checkbox" name="hobbies[]" value="Music" />
+<label>Music</label>
+<input type="checkbox" name="hobbies[]" value="Travel" />
+<label>Travel</label>
+<input type="checkbox" name="hobbies[]" value="Photography" />
+<label>Photography</label>
+<input type="checkbox" name="hobbies[]" value="Other" />
+<label>Other</label>
+</td>
+</tr>
+<tr>
+<td><label>Country: </label></td>
+<td>
+<select name="country">
+<option value="Nepal">Nepal</option>
+<option value="USA">USA</option>
+<option value="UK"zz>UK</option>
+<option value="Australia">Australia</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label>Comments: </label></td>
+<td><textarea rows="10" col="10" ></textarea></td>
+</tr>
+<tr>
+<td><label>Rating: </label></td>
+<td><input type="range" name="rating" /></td>
+</tr>
+<tr>
+<td><label>Image: </label></td>
+<td><input type="file" name="image" /></td>
+</tr>
+<tr>
+<td>
+<input type="submit" value="Register" />
+<!--<input type="reset" value="Reset" />
+<input type="button" value="Click" />-->
+</td>
+<td>
+<!--<button type="submit">Register</button>-->
+<button type="reset">Reset</button>
+<button type="button">Click</button>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Javascript</title>
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1 id="test" onmouseover="myFunction()"
+onmouseout="myFunction1()"
+style="background: aqua; width: 200px;">
+Welcome</h1>
+<input type="number" id="user_input" />
+<!--<input type="number" id="user_input2" />-->
+<button type="button" onclick="on_btn_click('+')">+</button>
+<button type="button" onclick="on_btn_click('-')">-</button>
+<button type="button" onclick="on_btn_click('*')">*</button>
+<button type="button" onclick="on_btn_click('/')">/</button>
+<button type="button" onclick="on_btn_click('=')">=</button>
+<button type="button" onclick="on_btn_click('1')">1</button>
+<button type="button" onclick="on_btn_click('2')">2</button>
+<button type="button" onclick="on_btn_click('3')">3</button>
+<button type="button" onclick="on_btn_click('4')">4</button>
+<button type="button" onclick="on_btn_click('5')">5</button>
+<button type="button" onclick="on_btn_click('6')">6</button>
+<button type="button" onclick="on_btn_click('7')">7</button>
+<button type="button" onclick="on_btn_click('8')">8</button>
+<button type="button" onclick="on_btn_click('9')">9</button>
+
+<!--
+variable
+datatype
+operator -> (+ - * / %)Arithmatic (&& || !)Logical
+(=== == > < <= >=)Comparision (=)assignment
+concatenation(+)
+conditional statements
+looping statements
+array
+function
+json
+-->
+<script>
+// can perform a task(trigger a function) on user action
+var my_var = "Everyone !";
+var my_var1 = "Welcome";
+
+//alert('Hello Everyone !!!')
+//document.write('This is Javascript !');
+//console.log('This is Console output');
+
+function myFunction()
+{
+document.getElementById('test').innerHTML = my_var;
+}
+function myFunction1()
+{
+document.getElementById('test').innerHTML = my_var1;
+}
+function on_btn_click(op)
+{
+var user_input = document.getElementById('user_input').value;
+//var user_input2 = document.getElementById('user_input2').value;
+//document.getElementById('user_input2').value = 12312;
+if (user_input == '')
+{
+alert('Please Insert a number');
+}
+else if (user_input2 == '')
+{
+alert('Please Insert a number');
+}
+else
+{
+if(op == '+')
+{alert(Number(user_input));}
+if(op == '-')
+{alert(Number(user_input) );}
+if(op == '*')
+{alert(Number(user_input));}
+if(op == '/')
+{alert(Number(user_input) );}
+}
+}
+</script>
+</body>
+</html>

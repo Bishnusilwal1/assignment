@@ -1,0 +1,124 @@
+/*
+Selectors
+---------
+1. Universal Selector(*)
+2. Tag Selector(p / h1)
+3. id Selector (#id_name)
+4. class Selector (.class_name)
+5. Grouping Selector(h1, p / .class_name, h2, p)
+6. Descendant Selector(div p)
+7. Child Selector(div > p)
+8. Sibling Selector(h1 ~ p)
+9. Adjascent Sibling Selector(h1 + p)
+10. Pseudo Element Selector(::first-letter / ::first-line / ::before / ::after)
+11. Pseudo Class Selector(:hover / :link / :active / :visited)
+12. Attribute Selector(input[type='submit'] / a[href='#'])
+
+Properties
+----------
+1. Text Properties / List Properties
+2. Box Properties
+3. Float & Clear
+4. Display (inline, block, inline-block, none, flex, grid)
+5. Position (absolute, relative, fixed, sticky, static)
+6.
+*/
+
+*
+{
+margin: 0;
+padding: 0;
+}
+
+#all
+{
+margin: 0 auto;
+width: 90%;
+}
+
+a:link
+{
+color: green;
+}
+a:hover
+{
+color: red;
+}
+a:active
+{
+color: yellow;
+}
+a:visited
+{
+color: brown;
+}
+
+#main
+{
+background-color: aqua;
+float: left;
+}
+#main > h1
+{
+color: blue;
+}
+#main > h1::first-letter
+{
+color: green;
+}
+#main > h1::before
+{
+content: url(icon.jpg);
+}
+
+#main1
+{
+float: left;
+clear: left;
+}
+#main1 h1 + p::first-letter
+{
+color: red;
+font-size: 30px;
+}
+#main1 h1 + p::first-line
+{
+background-color: pink;
+}
+
+#main1 h1 + p::first-line
+{
+background-color: pink;
+}
+
+#p2::after
+{
+content: " Thank you !!!";
+}
+
+#main1 p:nth-child(5)
+{
+text-shadow: red 5px 5px 5px;
+}
+#main1 h2{
+    color: red;
+    margin: 20px;
+    position: relative;
+    transform: rotateX(10px);
+}
+
+#display
+{
+float: left;
+width: 100%;
+display: inline-grid;
+grid-template-columns: 100px 100px 100px 100px;
+grid-gap: 50px 50px;
+}
+.display-div
+{
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    }

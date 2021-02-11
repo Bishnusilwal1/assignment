@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta= name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-UA-Compatible" content="ie=edge">
+        <title>Dcument</title>
+        <script src="jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Java Scripts</h1>
+    <input type="text" name="username">
+    <input type="button" value="Click" id="my_btn">
+    <br>
+    <label for="student">Student</label>
+    <input type="checkbox" name="job" id="student" value="student">
+    <label for="lecturer">Lecturer</label>
+    <input type="checkbox" name="job" id="lecturer" value="lecturer">
+    <label for="accountant">accountant</label>
+    <input type="checkbox" name="job" id="accountant" value="accountant">
+
+    <script>
+        var informationList = [];
+        $(document).ready(function () {
+            $('h1').click(function () {
+                $('h1').html('From JQuery');
+                $('h1').attr('align', 'center');
+                $('h1').css('color', 'red');
+            });
+        });
+
+        $('#my_btn').click(function () {
+            alert($('input[name=username]').val());
+        })
+        $('input[name=job]').change(function () {
+            if (this.checked) {
+                informationList.push(this.value);
+            } else {
+                var index = informationList.indexOf(this.value);
+                informationList.splice(index, 1);
+            }
+            console.log(informationList);
+        });
+
+
+    </script>
+
+</body>
+
+
+
+</html>

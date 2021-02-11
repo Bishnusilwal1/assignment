@@ -1,0 +1,147 @@
+#nav
+{
+background-color: blue;
+float: left;
+height: 50px;
+width: 100%;
+}
+#nav ul
+{
+list-style: none;
+margin: 0;
+}
+#nav ul li
+{
+float: left;
+margin: 15px 20px;
+}
+#nav ul li a
+{
+color: #ffffff;
+font-weight: bold;
+text-decoration: none;
+width: 100px;
+}
+#nav ul li ul
+{
+background: blue;
+border: 1px solid aqua;
+display: none;
+padding: 0;
+position: absolute;
+}
+#nav ul li ul li
+{
+float: none;
+}
+#nav ul li:hover ul
+{
+display: block;
+}
+
+.frm-div
+{
+margin: 10px auto;
+}
+
+label
+{
+/*display: inline-block; (inline, block, inline-block, none) */
+color: blue;
+float: left;
+width: 100px;
+}
+
+.opt-lbl
+{
+color: brown;
+float: none;
+width: auto;
+}
+
+input[type='text'], input[type='password'], input[type='date'], input[type='number'],
+input[type='email'], input[type='url'], input[type='range'], input[type='file'], select
+{
+background-color: aqua;
+border: 1px solid green;
+border-radius: 5px;
+color: red;
+padding: 10px;
+width: 250px;
+}
+textarea
+{
+border: 1px solid green;
+border-radius: 5px;
+width: 250px;
+}
+input[type='submit']
+{
+background-color: green;
+border: none;
+border-radius: 20px;
+color: #fff;
+padding: 10px 5px;
+width: 100px;
+}
+button
+{
+background-color: red;
+border: none;
+border-radius: 20px;
+color: #fff;
+padding: 10px 5px;
+width: 100px;
+}
+button[type='button']
+{
+background-color: blue;
+}
+
+
+#my-list ul
+{
+background-color: blue;
+/* list-style: none;
+list-style-type: upper-roman; */
+list-style-image: url(arrow.png);
+list-style-position: inside;
+}
+#my-list ul li
+{
+background-color: green;
+}
+
+table
+{
+width: 500px;
+}
+table, th, td
+{
+border: 1px solid #000;
+border-collapse: collapse;
+}
+th
+{
+background-color: blue;
+color: #fff;
+}
+/*
+tr
+{
+background-color: pink;
+}
+.alt-row
+{
+background-color: orange;
+}
+*/
+#col-name-add
+{
+background-color: lightgreen;
+}
+
+#col-phone
+{
+background-color: aqua;
+}

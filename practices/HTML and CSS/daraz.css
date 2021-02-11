@@ -1,0 +1,44 @@
+
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background: #eceff1;
+
+}
+h2{
+    padding: 20px;
+    color: rgb(26, 139, 26);
+}
+#Products{
+    text-align: center;
+    width: 100%;
+}
+#row .col-1{
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+#row .col-1 img{
+    width: 100%;
+    border: 8px solid #ffff;
+    box-shadow: 0  5px #555555;
+    border: 5px;
+}
+#riw .col-1:hover img{
+    filter: grayscale(100%);
+    transition: filter o.5s ease-in-out;
+}
+#row .col-1 span{
+    display: none;
+    position: absolute;
+    top: 95px;
+    left: 75px;
+}
+#row .col-1:hover span{
+    display: block;
+}
