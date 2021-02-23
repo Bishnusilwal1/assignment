@@ -1,5 +1,8 @@
 package bishnu;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AdjGraphList {
 	int vertex=4;
 	LinkedList list[]=new LinkedList[vertex];
@@ -27,7 +30,44 @@ public class AdjGraphList {
 			
 			
 		}
-	}
+		
+		public List<Integer>getAdjacentNodes(int val){
+			List<Integer> adjlist=new ArrayList<>() ;
+			for(int i=0; i<list[val].size();i++) {
+				adjlist.add(list[val].get(i));
+			
+				
+			}
+			return adjlist;
+			
+			}
+			public void BFS(int rootnode) {
+				System.out.println("printing BFS");
+				
+				boolean visited[]=new boolean[vertex];
+				Queues q=new Queues();
+				visited[rootnode]=true;
+				q.enqueue(rootnode);
+				while(q.size()!=0) {
+					int val=q.dequeue();
+					System.out.println(val);
+				Iterator<Integer> iterator=getAdjacenntNodes(val).iterator();
+					while(iterator.hasNext()) {
+						int adjval=iterator.next();
+						if(!visited[adjval]) {
+							q.enqueue(adjval);
+							visited[adjval]=true; 
+							
+						}
+					}
+				
+				}
+					
+				}
+				
+			
+		
+		}
 	public static void main (String[]arg) { 
 		AdjGraphList adj=new AdjGraphList();
 			adj.addEdge(0, 1);
@@ -35,6 +75,7 @@ public class AdjGraphList {
 			adj.addEdge(1, 2);
 			adj.addEdge(2, 3);
 			adj.printGraph();
+			adj.BFS
 			
 		
 		//LinkedList list=new LinkedList();
